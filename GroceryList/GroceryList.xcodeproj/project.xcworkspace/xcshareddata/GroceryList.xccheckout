@@ -7,20 +7,16 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F4EA080F-A51F-4A9D-BE0C-1CBEEBFFA0EA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>GroceryList</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>412A5402F413F975FAEB4C9B127C5216528926D6</key>
-		<string>https://github.com/jholsapple/TIY-Assignments.git</string>
 		<key>9B39151F6DCBB964125F310F72207C9B10228819</key>
 		<string>https://github.com/jholsapple/TIY-ClassWork.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>GroceryList/GroceryList.xcodeproj/project.xcworkspace</string>
+	<string>GroceryList/GroceryList.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>412A5402F413F975FAEB4C9B127C5216528926D6</key>
-		<string>../../../../TIY-Assignments</string>
 		<key>9B39151F6DCBB964125F310F72207C9B10228819</key>
 		<string>../../..</string>
 	</dict>
@@ -32,14 +28,6 @@
 	<string>9B39151F6DCBB964125F310F72207C9B10228819</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>412A5402F413F975FAEB4C9B127C5216528926D6</string>
-			<key>IDESourceControlWCCName</key>
-			<string>TIY-Assignments</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
