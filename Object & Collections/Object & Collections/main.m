@@ -31,14 +31,14 @@ int main(int argc, const char * argv[])
          NSNumber *aDouble = [NSNumber numberWithDouble: 123.67f];
          NSLog(@"%f", [aDouble doubleValue]);
         
-        /*NSNumber *aNumber = [NSNumber numberWithInt: 12];
+        NSNumber *aNumber = [NSNumber numberWithInt: 12];
         float asFloat = [aNumber floatValue];
         NSLog(@"%f", asFloat);
         // ^ created an Integer and took out a float as the value
         
         NSString *asString = [aNumber stringValue];
         NSLog(@"%@", asString);
-        */
+        
         // Using shortcuts Apple created for the above code
         NSNumber *success = @NO;
         NSNumber *lotteryPick = @15;
@@ -49,9 +49,9 @@ int main(int argc, const char * argv[])
         NSNumber *result = @(x * 0.15f);
         NSLog(@"%@", result);
         
-        NSNumber *aNumber = @12;
+        NSNumber *bNumber = @12;
         NSNumber *anotherNumber = @12.0f;
-        if ([aNumber isEqualToNumber: anotherNumber])
+        if ([bNumber isEqualToNumber: anotherNumber])
         {
             NSLog(@"Numbers are equal");
         }
@@ -61,18 +61,18 @@ int main(int argc, const char * argv[])
         }
         
         NSNumber *aThirdNumber = @15;
-        NSComparisonResult answer = [aNumber compare: aThirdNumber];
+        NSComparisonResult answer = [bNumber compare: aThirdNumber];
         if (answer == NSOrderedAscending)
         {
-            NSLog(@"%@ < %@", aNumber, aThirdNumber);
+            NSLog(@"%@ < %@", bNumber, aThirdNumber);
         }
         else if (answer == NSOrderedSame)
         {
-            NSLog(@"%@ == %@", aNumber, aThirdNumber);
+            NSLog(@"%@ == %@", bNumber, aThirdNumber);
         }
         else if (answer == NSOrderedDescending)
         {
-            NSLog(@"%@ > %@", aNumber, aThirdNumber);
+            NSLog(@"%@ > %@", bNumber, aThirdNumber);
         }
        
         //Arrays - Two ways of declaring
