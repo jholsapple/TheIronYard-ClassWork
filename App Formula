@@ -1,0 +1,32 @@
+### Design Instructions for a Tabbed Application
+
+#### General steps for creating and new views
+
+- Create new Tabbed application in iOS
+- Enter a name for the project and save
+- Make sure initial view is set to "Is initial view controller"
+- Delete first view controller and drag over a Table view controller.
+- Create a segue from the main view to the new Table view controller.
+- Make sure you embed the new view controller with Navigation Controller
+- Create a new file, select Cocoa touch class, and set the subclass to UITableViewController
+- Name the UITableViewController according to what will be in the view.
+- Set the view controller in the storyboard to the designated class under Identity Inspector
+- If needed, change the name of the Tab
+- Change cell type, if needed. Click on the view controller, and select attributes inspector. You can then change the content from dynamic to static.
+- On to the second view. Delete it and move in a new Table view controller.
+- Once views are set in their place, make sure to re-order the Tabs in the main view.
+
+You can then repeat the above steps if the coming views are similar. Change where needed.
+
+#### Formatting Table view with cells
+
+##### If you'd like to keep the customization from within the storyboard and the cells are not going to change, you can change the content of the cells.
+- Select the view controller and go to the attributes inspector. Select content and change to Static Cells
+##### You can also change the amount of sections and rows
+- Stay in the attributes inspector and select the amount of sections you'd like.
+- If you select the section, you can change the amount of rows in each section.
+- You can also change the header for the section in the same column.
+- To add a label or button, click and drag from the right sided menu. Place where needed.
+- Auto layout is also needed. Set constraints for where you want it placed.
+- Remember to rename the labels.
+- If the cell leads to another view, you can give it an accessory. Under attributes inspector, select accessory and pick one for your cell.
