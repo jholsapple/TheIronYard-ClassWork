@@ -15,6 +15,9 @@
 		7492568F1B418445008473A2 /* IronEventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7492568E1B418445008473A2 /* IronEventsTests.m */; };
 		7492569D1B4185CA008473A2 /* EventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7492569C1B4185CA008473A2 /* EventsTableViewController.m */; };
 		749256A01B418E81008473A2 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7492569F1B418E81008473A2 /* SettingsTableViewController.m */; };
+		74A696AF1B42D64A00685976 /* meetups.json in Resources */ = {isa = PBXBuildFile; fileRef = 74A696AE1B42D64A00685976 /* meetups.json */; };
+		74A696B21B42DED700685976 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A696B11B42DED700685976 /* EventTableViewCell.m */; };
+		74A696B51B42E47400685976 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A696B41B42E47400685976 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,11 @@
 		7492569C1B4185CA008473A2 /* EventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsTableViewController.m; sourceTree = "<group>"; };
 		7492569E1B418E81008473A2 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		7492569F1B418E81008473A2 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		74A696AE1B42D64A00685976 /* meetups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meetups.json; sourceTree = "<group>"; };
+		74A696B01B42DED700685976 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		74A696B11B42DED700685976 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
+		74A696B31B42E47400685976 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		74A696B41B42E47400685976 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +92,15 @@
 		749256711B418445008473A2 /* IronEvents */ = {
 			isa = PBXGroup;
 			children = (
+				74A696AE1B42D64A00685976 /* meetups.json */,
 				749256761B418445008473A2 /* AppDelegate.h */,
 				749256771B418445008473A2 /* AppDelegate.m */,
 				7492569B1B4185CA008473A2 /* EventsTableViewController.h */,
 				7492569C1B4185CA008473A2 /* EventsTableViewController.m */,
+				74A696B01B42DED700685976 /* EventTableViewCell.h */,
+				74A696B11B42DED700685976 /* EventTableViewCell.m */,
+				74A696B31B42E47400685976 /* Event.h */,
+				74A696B41B42E47400685976 /* Event.m */,
 				7492569E1B418E81008473A2 /* SettingsTableViewController.h */,
 				7492569F1B418E81008473A2 /* SettingsTableViewController.m */,
 				7492567C1B418445008473A2 /* Main.storyboard */,
@@ -207,6 +220,7 @@
 				7492567E1B418445008473A2 /* Main.storyboard in Resources */,
 				749256831B418445008473A2 /* LaunchScreen.xib in Resources */,
 				749256801B418445008473A2 /* Images.xcassets in Resources */,
+				74A696AF1B42D64A00685976 /* meetups.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,10 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A696B51B42E47400685976 /* Event.m in Sources */,
 				749256A01B418E81008473A2 /* SettingsTableViewController.m in Sources */,
 				749256781B418445008473A2 /* AppDelegate.m in Sources */,
 				7492569D1B4185CA008473A2 /* EventsTableViewController.m in Sources */,
 				749256751B418445008473A2 /* main.m in Sources */,
+				74A696B21B42DED700685976 /* EventTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +438,7 @@
 				749256941B418445008473A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		749256951B418445008473A2 /* Build configuration list for PBXNativeTarget "IronEventsTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +447,7 @@
 				749256971B418445008473A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

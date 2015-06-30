@@ -10,21 +10,30 @@
 
 @interface SettingsTableViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *frontEndEngineeringCircle;
+@property (weak, nonatomic) IBOutlet UIView *kidsClasses;
+@property (weak, nonatomic) IBOutlet UIView *mobileEngineering;
+@property (weak, nonatomic) IBOutlet UIView *railsEngineering;
+
 @end
 
 @implementation SettingsTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.frontEndEngineeringCircle.layer.cornerRadius = self.frontEndEngineeringCircle.frame.size.width/2;
+    self.kidsClasses.layer.cornerRadius = self.kidsClasses.frame.size.width/2;
+    self.mobileEngineering.layer.cornerRadius = self.mobileEngineering.frame.size.width/2;
+    self.railsEngineering.layer.cornerRadius = self.railsEngineering.frame.size.width/2;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.title = @"More";
+    
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

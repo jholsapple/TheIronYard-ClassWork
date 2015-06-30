@@ -1,0 +1,50 @@
+[
+	{
+		"title": "Free Crash Course - Ruby on Rails for Non-Developers",
+		"date": "2015-07-09 18:30 EDT",
+		"room": "Gemini",
+		"track": 2
+	},
+	{
+		"title": "Free Crash Course - Intro to Javascript",
+		"date": "2015-07-27 18:30 EDT",
+		"room": "Apollo",
+		"track": 3
+	},
+	{
+		"title": "Free Crash Course - Ruby on Rails for Developers",
+		"date": "2015-08-10 18:30 EDT",
+		"room": "Gemini",
+		"track": 2
+	},
+	{
+		"title": "Free Crash Course - iOS for Non-Developers",
+		"date": "2015-08-31 18:30 EDT",
+		"room": "Mercury",
+		"track": 1
+	},
+	{
+		"title": "Free Crash Course - iOS for Developers",
+		"date": "2015-09-14 18:30 EDT",
+		"room": "Mercury",
+		"track": 1
+	},
+	{
+		"title": "Free Crash Course - From CSS to SASS",
+		"date": "2015-10-19 18:30 EDT",
+		"room": "Apollo",
+		"track": 3
+	},
+	{
+		"title": "Free Crash Course - Ruby on Rails for Non-Developers",
+		"date": "2015-11-16 18:30 EDT",
+		"room": "Gemini",
+		"track": 2
+	},
+	{
+		"title": "Free Crash Course - iOS for Non-Developers",
+		"date": "2015-12-07 18:30 EDT",
+		"room": "Mercury",
+		"track": 1
+	}
+]

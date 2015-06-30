@@ -7,51 +7,78 @@
 //
 
 #import "EventsTableViewController.h"
+#import "EventTableViewCell.h"
+#import "Event.h"
 
 @interface EventsTableViewController ()
+{
+    NSArray *_events;
+}
+
+-(void) loadEvents;
 
 @end
 
 @implementation EventsTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+-(void)loadEvents
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"meetups" ofType:@"json"];
+    NSArray *events = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options:NSJSONReadingAllowFragments error:nil];
+    
+    NSMutableArray *multipleEvents = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *anEvent in events)
+    {
+        //Event *theEvent = [[Event alloc] initWithTitle:[anEvent objectForKey:@"title"] room:[anEvent objectForKey:@"room"] date:[anEvent objectForKey:@"date"] andTrack:[[anEvent objectForKey:@"track"] integerValue]];
+        Event *theEvent = [[Event alloc] initWithDictionary:anEvent];
+        
+        [multipleEvents addObject:theEvent];
+    }
+    _events = [multipleEvents copy];
+    [self.tableView reloadData];
+}
+
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     // Return the number of rows in the section.
-    return 0;
+    return [_events count];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
+ {
+    EventTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventsCell" forIndexPath:indexPath];
     
     // Configure the cell...
+     Event *anEvent = [_events objectAtIndex:indexPath.row];
+     cell.titleLabel.text = anEvent.title;
+     cell.trackColorView
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -91,7 +118,8 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender 
+ {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
