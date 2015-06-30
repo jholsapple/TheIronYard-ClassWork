@@ -27,14 +27,15 @@
                                                 <constraint firstAttribute="height" constant="22" id="lE7-Ma-KwD"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJf-NG-GUF">
-                                            <rect key="frame" x="52" y="11.5" width="42" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJf-NG-GUF">
+                                            <rect key="frame" x="52" y="11.5" width="507" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="SJf-NG-GUF" secondAttribute="trailing" constant="8" id="0mP-kI-CIO"/>
                                         <constraint firstAttribute="centerY" secondItem="hew-Tm-Gu3" secondAttribute="centerY" id="8sT-z6-esC"/>
                                         <constraint firstItem="hew-Tm-Gu3" firstAttribute="leading" secondItem="OLd-He-Ttf" secondAttribute="leading" constant="15" id="VaW-JI-fUR"/>
                                         <constraint firstItem="hew-Tm-Gu3" firstAttribute="centerY" secondItem="SJf-NG-GUF" secondAttribute="centerY" id="tTg-qr-1QA"/>
@@ -125,12 +126,14 @@
                                             <constraints>
                                                 <constraint firstItem="Ubx-PC-zTH" firstAttribute="centerY" secondItem="27u-ka-mwB" secondAttribute="centerY" id="TfE-jx-rGa"/>
                                                 <constraint firstItem="Ubx-PC-zTH" firstAttribute="leading" secondItem="27u-ka-mwB" secondAttribute="trailing" constant="8" id="UvC-ur-6Vl"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ubx-PC-zTH" secondAttribute="trailing" constant="477" id="bXl-MI-2D0"/>
                                                 <constraint firstItem="Ubx-PC-zTH" firstAttribute="leading" secondItem="Iy5-rZ-aYH" secondAttribute="leading" constant="15" id="cEk-nL-aKa"/>
                                                 <constraint firstAttribute="centerY" secondItem="27u-ka-mwB" secondAttribute="centerY" id="eaU-Yj-CWI"/>
                                                 <constraint firstItem="27u-ka-mwB" firstAttribute="leading" secondItem="Iy5-rZ-aYH" secondAttribute="leading" constant="15" id="wLe-z8-58i"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
+                                                    <exclude reference="bXl-MI-2D0"/>
                                                     <exclude reference="cEk-nL-aKa"/>
                                                 </mask>
                                             </variation>
@@ -149,7 +152,7 @@
                                                         <constraint firstAttribute="height" constant="22" id="k4W-st-8bP"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kids Classes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwH-rC-5Ed">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kids Classes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qwH-rC-5Ed">
                                                     <rect key="frame" x="45" y="11" width="100" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -183,7 +186,7 @@
                                                         <constraint firstAttribute="width" constant="22" id="pew-Aw-g1N"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Engineering" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiY-ez-bOS">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Engineering" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oiY-ez-bOS">
                                                     <rect key="frame" x="45" y="11" width="147" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -217,7 +220,7 @@
                                                         <constraint firstAttribute="height" constant="22" id="F87-5K-TeX"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rails Engineering" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcG-n4-ljY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rails Engineering" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DcG-n4-ljY">
                                                     <rect key="frame" x="45" y="11" width="133" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -249,8 +252,9 @@
                     <navigationItem key="navigationItem" title="More" id="drg-T8-3uo"/>
                     <connections>
                         <outlet property="frontEndEngineeringCircle" destination="27u-ka-mwB" id="8US-wC-k4F"/>
-                        <outlet property="kidsClasses" destination="fAm-mm-oqH" id="lnY-Q6-5By"/>
-                        <outlet property="mobileEngineering" destination="4rg-iL-Kjo" id="Diz-2p-hOT"/>
+                        <outlet property="kidsClassesCircle" destination="fAm-mm-oqH" id="GRG-uc-eaB"/>
+                        <outlet property="mobileEngineeringCircle" destination="4rg-iL-Kjo" id="YlY-aA-bWp"/>
+                        <outlet property="railsEngineeringCircle" destination="9Oe-72-Psx" id="bxW-sR-X59"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HoV-zP-qYy" userLabel="First Responder" sceneMemberID="firstResponder"/>

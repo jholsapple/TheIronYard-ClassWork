@@ -25,7 +25,7 @@
 {
     [super viewDidLoad];
     
-    
+    [self loadEvents];
 
 }
 
@@ -75,7 +75,24 @@
     // Configure the cell...
      Event *anEvent = [_events objectAtIndex:indexPath.row];
      cell.titleLabel.text = anEvent.title;
-     cell.trackColorView
+     UIColor *trackColor;
+     switch (anEvent.track)
+     {
+         case 1:
+             trackColor = [UIColor colorWithRed:0.827 green:0.705 blue:0.168 alpha:1];
+             break;
+         case 2:
+             trackColor = [UIColor colorWithRed:0.807 green:0.513 blue:0.176 alpha:1];
+             break;
+         case 3:
+             trackColor = [UIColor colorWithRed:0.721 green:0.345 blue:0.298 alpha:1];
+             break;
+         default:
+             trackColor = [UIColor blackColor];
+             break;
+     }
+     cell. trackColorView.backgroundColor = trackColor;
+     cell.trackColorView.layer.cornerRadius = cell.trackColorView.frame.size.width/2;
     
     return cell;
 }

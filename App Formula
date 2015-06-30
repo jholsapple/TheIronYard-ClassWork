@@ -30,3 +30,14 @@ You can then repeat the above steps if the coming views are similar. Change wher
 - Auto layout is also needed. Set constraints for where you want it placed.
 - Remember to rename the labels.
 - If the cell leads to another view, you can give it an accessory. Under attributes inspector, select accessory and pick one for your cell.
+
+#### Connecting the Code in
+
+##### @interface
+- Add the color views as properties in the @interface on .m file
+- Connect these properties using the connections inspector or assistant editor
+##### -(void)viewDidLoad
+- To customize the views to look like circles call this in the viewDidLoad method, self.frontEndEngineeringCircle.layer.cornerRadius = self.frontEndEngineeringCircle.frame.size.width/2;
+  - Change the property name being called to match the view you're changing
+- If you'd like to change the name of the View, self.title = @"View Name"
+-

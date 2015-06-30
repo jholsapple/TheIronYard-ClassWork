@@ -11,9 +11,9 @@
 @interface SettingsTableViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *frontEndEngineeringCircle;
-@property (weak, nonatomic) IBOutlet UIView *kidsClasses;
-@property (weak, nonatomic) IBOutlet UIView *mobileEngineering;
-@property (weak, nonatomic) IBOutlet UIView *railsEngineering;
+@property (weak, nonatomic) IBOutlet UIView *kidsClassesCircle;
+@property (weak, nonatomic) IBOutlet UIView *mobileEngineeringCircle;
+@property (weak, nonatomic) IBOutlet UIView *railsEngineeringCircle;
 
 @end
 
@@ -24,9 +24,9 @@
     [super viewDidLoad];
     
     self.frontEndEngineeringCircle.layer.cornerRadius = self.frontEndEngineeringCircle.frame.size.width/2;
-    self.kidsClasses.layer.cornerRadius = self.kidsClasses.frame.size.width/2;
-    self.mobileEngineering.layer.cornerRadius = self.mobileEngineering.frame.size.width/2;
-    self.railsEngineering.layer.cornerRadius = self.railsEngineering.frame.size.width/2;
+    self.kidsClassesCircle.layer.cornerRadius = self.kidsClassesCircle.frame.size.width/2;
+    self.mobileEngineeringCircle.layer.cornerRadius = self.mobileEngineeringCircle.frame.size.width/2;
+    self.railsEngineeringCircle.layer.cornerRadius = self.railsEngineeringCircle.frame.size.width/2;
     
     self.title = @"More";
     
