@@ -10,7 +10,7 @@
 
 @interface EventTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIView *trackColorView;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property(weak, nonatomic) IBOutlet UIView *trackColorView;
+@property(weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end
