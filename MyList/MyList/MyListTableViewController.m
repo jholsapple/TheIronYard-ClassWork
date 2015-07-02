@@ -21,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Same mutable array declaration, bottom one is shorthand.
+    
     //theStudents = [[NSArray alloc] initWithObjects:@"Ben", @"Ian", @"John", nil];
     
     NSArray *seedData = @[@{@"name": @"Ben", @"age": @31, @"course": @"iOS"}, @{@"name": @"Ian", @"age": @22, @"course": @"iOS"}, @{@"name": @"John", @"age": @32, @"course": @"iOS"}];
