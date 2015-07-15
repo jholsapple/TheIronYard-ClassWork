@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C83C92D8-D397-4BF6-9C9A-62F01A7F5511</string>
+	<key>IDESourceControlProjectName</key>
+	<string>playground</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9B39151F6DCBB964125F310F72207C9B10228819</key>
+		<string>https://github.com/jholsapple/TIY-ClassWork.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Protocols.playground/playground.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9B39151F6DCBB964125F310F72207C9B10228819</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jholsapple/TIY-ClassWork.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9B39151F6DCBB964125F310F72207C9B10228819</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9B39151F6DCBB964125F310F72207C9B10228819</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TIY-ClassWork</string>
+		</dict>
+	</array>
+</dict>
+</plist>
