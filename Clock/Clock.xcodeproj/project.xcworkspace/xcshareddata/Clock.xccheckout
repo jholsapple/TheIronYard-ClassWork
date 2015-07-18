@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C68FA6FC-8187-487B-A020-89CADFF9ABDC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Clock</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9B39151F6DCBB964125F310F72207C9B10228819</key>
 		<string>https://github.com/jholsapple/TIY-ClassWork.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Clock/Clock.xcodeproj/project.xcworkspace</string>
+	<string>Clock/Clock.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9B39151F6DCBB964125F310F72207C9B10228819</key>

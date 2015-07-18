@@ -17,7 +17,6 @@ class ViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        println("viewDidLoad")
         
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTimeLabel", userInfo: nil, repeats: true)
         
@@ -29,7 +28,6 @@ class ViewController: UIViewController
     {
         super.viewWillAppear(animated)
         
-        println("viewWillAppear")
         updateTimeLabel()
     }
     
