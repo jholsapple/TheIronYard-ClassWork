@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>0120C6BC-D4E4-484E-8E8D-0EC1A72259F8</string>
+	<string>3D6C7BC3-52AE-4919-B32A-294B603DC120</string>
 	<key>IDESourceControlProjectName</key>
-	<string>StopWatch</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9B39151F6DCBB964125F310F72207C9B10228819</key>
 		<string>https://github.com/jholsapple/TIY-ClassWork.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>StopWatch/StopWatch.xcodeproj</string>
+	<string>UnitConverter/UnitConverter.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9B39151F6DCBB964125F310F72207C9B10228819</key>
