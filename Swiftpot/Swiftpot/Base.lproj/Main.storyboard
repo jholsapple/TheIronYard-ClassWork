@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xQB-ab-SRC">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Roadhouse!-->
+        <scene sceneID="PSH-Yb-nXy">
+            <objects>
+                <tableViewController id="hcs-Q5-Eay" customClass="TicketsTableViewController" customModule="Swiftpot" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xYH-wL-6Y7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TicketCell" id="dVd-4D-gpX" customClass="TicketCell" customModule="Swiftpot" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dVd-4D-gpX" id="CuZ-Uu-IXW">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numbers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxd-xK-oN7">
+                                            <rect key="frame" x="15" y="11.5" width="70.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payout" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0N-xG-iUs">
+                                            <rect key="frame" x="531" y="11.5" width="54" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bxd-xK-oN7" firstAttribute="leading" secondItem="CuZ-Uu-IXW" secondAttribute="leading" constant="15" id="9C6-Rr-tU4"/>
+                                        <constraint firstAttribute="centerY" secondItem="bxd-xK-oN7" secondAttribute="centerY" id="JBe-hm-Pme"/>
+                                        <constraint firstAttribute="trailing" secondItem="Q0N-xG-iUs" secondAttribute="trailing" constant="15" id="OYl-n3-Sm2"/>
+                                        <constraint firstItem="Q0N-xG-iUs" firstAttribute="centerY" secondItem="bxd-xK-oN7" secondAttribute="centerY" id="UVK-jv-sTK"/>
+                                        <constraint firstAttribute="centerY" secondItem="Q0N-xG-iUs" secondAttribute="centerY" constant="0.25" id="gkI-U0-cLv"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="gkI-U0-cLv"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="numbersLabel" destination="bxd-xK-oN7" id="OLB-S5-XwG"/>
+                                    <outlet property="payoutLabel" destination="Q0N-xG-iUs" id="Bkm-AC-y3R"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hcs-Q5-Eay" id="M3i-wC-ecH"/>
+                            <outlet property="delegate" destination="hcs-Q5-Eay" id="MdA-Dd-dZT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Roadhouse!" id="R1V-np-qi9">
+                        <barButtonItem key="leftBarButtonItem" title="Check Ticket" id="Fbx-bp-9Vn">
+                            <connections>
+                                <segue destination="OKB-oH-Q5u" kind="presentation" identifier="ShowWinningTicketSegue" id="Zi4-hG-uF2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FGF-he-ABO">
+                            <connections>
+                                <action selector="createTicket:" destination="hcs-Q5-Eay" id="txD-xd-3Cm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5MD-P2-7jJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1189" y="410"/>
+        </scene>
+        <!--Winning Ticket View Controller-->
+        <scene sceneID="t6W-ZR-AXW">
+            <objects>
+                <viewController id="OKB-oH-Q5u" customClass="WinningTicketViewController" customModule="Swiftpot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nSh-Lv-5dE"/>
+                        <viewControllerLayoutGuide type="bottom" id="kTb-bA-ssN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oai-PY-dMa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-YA-7T6">
+                                <rect key="frame" x="0.0" y="219" width="600" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OKB-oH-Q5u" id="UZf-Iw-MEk"/>
+                                    <outlet property="delegate" destination="OKB-oH-Q5u" id="WFj-Et-4y6"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5Y-qb-akO">
+                                <rect key="frame" x="251" y="389" width="98" height="30"/>
+                                <state key="normal" title="Check Tickets">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkTicketsButton:" destination="OKB-oH-Q5u" eventType="touchUpInside" id="GF0-OM-jNg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsA-ni-fq5">
+                                <rect key="frame" x="536" y="550" width="48" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButton:" destination="OKB-oH-Q5u" eventType="touchUpInside" id="qog-LA-nWL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dsw-YA-7T6" firstAttribute="leading" secondItem="Oai-PY-dMa" secondAttribute="leading" id="4IY-iA-ste"/>
+                            <constraint firstAttribute="trailing" secondItem="dsw-YA-7T6" secondAttribute="trailing" id="6SL-Rd-ISw"/>
+                            <constraint firstAttribute="centerY" secondItem="dsw-YA-7T6" secondAttribute="centerY" id="Fpz-Jg-OWD"/>
+                            <constraint firstItem="P5Y-qb-akO" firstAttribute="top" secondItem="dsw-YA-7T6" secondAttribute="bottom" constant="8" id="H3K-Xf-0wC"/>
+                            <constraint firstAttribute="trailing" secondItem="TsA-ni-fq5" secondAttribute="trailing" constant="16" id="Kvj-2H-vKT"/>
+                            <constraint firstAttribute="centerX" secondItem="dsw-YA-7T6" secondAttribute="centerX" id="ejq-Ja-EfH"/>
+                            <constraint firstItem="kTb-bA-ssN" firstAttribute="top" secondItem="TsA-ni-fq5" secondAttribute="bottom" constant="20" id="g1m-Gq-kop"/>
+                            <constraint firstItem="P5Y-qb-akO" firstAttribute="centerX" secondItem="dsw-YA-7T6" secondAttribute="centerX" id="ixj-9s-mKW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="picker" destination="dsw-YA-7T6" id="hOf-vD-0Mp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3pW-D9-YUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897" y="410"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xG9-H6-GCb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xQB-ab-SRC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yhq-K5-PHC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hcs-Q5-Eay" kind="relationship" relationship="rootViewController" id="eob-5w-UDk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mfi-qu-TW0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466" y="410"/>
+        </scene>
+    </scenes>
+</document>
