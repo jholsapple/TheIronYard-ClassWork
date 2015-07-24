@@ -10,7 +10,7 @@ import UIKit
 
 class WinningTicketViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate
 {
-
+    var delegate: WinningTicketViewControllerDelegate?
     @IBOutlet weak var picker: UIPickerView!
     
     var winningPicks = [Int](count: 6, repeatedValue: 0)
@@ -20,6 +20,12 @@ class WinningTicketViewController: UIViewController, UIPickerViewDataSource, UIP
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillDisappear(animated: Bool)
+    {
+        super.viewWillDisappear(true)
+        delegate?.winningTicketWasAdded(Ticket())
     }
 
     override func didReceiveMemoryWarning()

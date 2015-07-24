@@ -8,7 +8,12 @@
 
 import UIKit
 
-class TicketsTableViewController: UITableViewController
+protocol WinningTicketViewControllerDelegate
+{
+    func winningTicketWasAdded(ticket: Ticket)
+}
+
+class TicketsTableViewController: UITableViewController, WinningTicketViewControllerDelegate
 {
 
     var tickets = [Ticket]()
@@ -89,15 +94,29 @@ class TicketsTableViewController: UITableViewController
     }
     */
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "ShowWinningTicketSegue"
+        {
+            let ticketsVC = segue.destinationViewController as! WinningTicketViewController
+            ticketsVC.delegate = self
+        }
     }
-    */
+    
+    //MARK: - Winning Ticket View Controller Delegate
+    
+    func winningTicketWasAdded(ticket: Ticket)
+    {
+        navigationController?.dismissViewControllerAnimated(true, completion: nil)
+        checkForWinnersUsingTicket(ticket)
+    }
+    
+    func checkForWinnersUsingTicket(winningTicket: Ticket)
+    {
+        
+    }
     
     //MARK: - Action Handlers
 

@@ -59,4 +59,9 @@ class Ticket
         return numbers
     }
     
+    func compartWithTicket(anotherTicket: Ticket)
+    {
+        let anotherTicketPicks 
+    }
+    
 }

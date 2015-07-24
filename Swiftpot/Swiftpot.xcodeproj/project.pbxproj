@@ -85,9 +85,9 @@
 			children = (
 				74BEBE6D1B6123CF0024A30E /* AppDelegate.swift */,
 				74BEBE8D1B6128ED0024A30E /* TicketsTableViewController.swift */,
-				74BEBE931B613C670024A30E /* Ticket.swift */,
-				74BEBE8F1B61292E0024A30E /* WinningTicketViewController.swift */,
 				74BEBE911B61296B0024A30E /* TicketCell.swift */,
+				74BEBE8F1B61292E0024A30E /* WinningTicketViewController.swift */,
+				74BEBE931B613C670024A30E /* Ticket.swift */,
 				74BEBE711B6123CF0024A30E /* Main.storyboard */,
 				74BEBE741B6123CF0024A30E /* Images.xcassets */,
 				74BEBE761B6123CF0024A30E /* LaunchScreen.xib */,
