@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		744EA5101B6A773E002474E4 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 744EA5111B6A773E002474E4 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				744EA5141B6A774F002474E4 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		744EA4CF1B690B68002474E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 744EA4CE1B690B68002474E4 /* main.m */; };
+		744EA4D21B690B68002474E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 744EA4D11B690B68002474E4 /* AppDelegate.m */; };
+		744EA4DA1B690B68002474E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744EA4D91B690B68002474E4 /* Images.xcassets */; };
+		744EA4DD1B690B68002474E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744EA4DB1B690B68002474E4 /* LaunchScreen.xib */; };
+		744EA4F41B690CC5002474E4 /* PinsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744EA4F31B690CC5002474E4 /* PinsViewController.m */; };
+		744EA50F1B6A7629002474E4 /* PickitModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 744EA50D1B6A7629002474E4 /* PickitModel.xcdatamodeld */; };
+		744EA51E1B6A7885002474E4 /* _PicMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 744EA51B1B6A7885002474E4 /* _PicMark.m */; };
+		744EA51F1B6A7885002474E4 /* PicMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 744EA51D1B6A7885002474E4 /* PicMark.m */; };
+		744EA5231B6A78E3002474E4 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 744EA5221B6A78E3002474E4 /* CoreDataStack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		744EA4C91B690B68002474E4 /* Pickit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		744EA4CD1B690B68002474E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744EA4CE1B690B68002474E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		744EA4D01B690B68002474E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		744EA4D11B690B68002474E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		744EA4D91B690B68002474E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		744EA4DC1B690B68002474E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		744EA4F21B690CC5002474E4 /* PinsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinsViewController.h; sourceTree = "<group>"; };
+		744EA4F31B690CC5002474E4 /* PinsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinsViewController.m; sourceTree = "<group>"; };
+		744EA50E1B6A7629002474E4 /* PickitModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PickitModel.xcdatamodel; sourceTree = "<group>"; };
+		744EA51A1B6A7885002474E4 /* _PicMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _PicMark.h; path = MOGenerated/_PicMark.h; sourceTree = "<group>"; };
+		744EA51B1B6A7885002474E4 /* _PicMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _PicMark.m; path = MOGenerated/_PicMark.m; sourceTree = "<group>"; };
+		744EA51C1B6A7885002474E4 /* PicMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicMark.h; path = Classes/PicMark.h; sourceTree = "<group>"; };
+		744EA51D1B6A7885002474E4 /* PicMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicMark.m; path = Classes/PicMark.m; sourceTree = "<group>"; };
+		744EA5211B6A78E3002474E4 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataStack.h; path = ../CoreDataStack.h; sourceTree = "<group>"; };
+		744EA5221B6A78E3002474E4 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataStack.m; path = ../CoreDataStack.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		744EA4C61B690B68002474E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		744EA4C01B690B67002474E4 = {
+			isa = PBXGroup;
+			children = (
+				744EA4CB1B690B68002474E4 /* Pickit */,
+				744EA4CA1B690B68002474E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		744EA4CA1B690B68002474E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				744EA4C91B690B68002474E4 /* Pickit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		744EA4CB1B690B68002474E4 /* Pickit */ = {
+			isa = PBXGroup;
+			children = (
+				744EA5241B6A78EF002474E4 /* Libraries */,
+				744EA5191B6A77CE002474E4 /* CoreDataModels */,
+				744EA4D01B690B68002474E4 /* AppDelegate.h */,
+				744EA4D11B690B68002474E4 /* AppDelegate.m */,
+				744EA4F21B690CC5002474E4 /* PinsViewController.h */,
+				744EA4F31B690CC5002474E4 /* PinsViewController.m */,
+				744EA4D91B690B68002474E4 /* Images.xcassets */,
+				744EA50D1B6A7629002474E4 /* PickitModel.xcdatamodeld */,
+				744EA4DB1B690B68002474E4 /* LaunchScreen.xib */,
+				744EA4CC1B690B68002474E4 /* Supporting Files */,
+			);
+			path = Pickit;
+			sourceTree = "<group>";
+		};
+		744EA4CC1B690B68002474E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				744EA4CD1B690B68002474E4 /* Info.plist */,
+				744EA4CE1B690B68002474E4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		744EA5191B6A77CE002474E4 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				744EA5201B6A788A002474E4 /* Generated - DO NOT EDIT */,
+				744EA51C1B6A7885002474E4 /* PicMark.h */,
+				744EA51D1B6A7885002474E4 /* PicMark.m */,
+			);
+			name = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		744EA5201B6A788A002474E4 /* Generated - DO NOT EDIT */ = {
+			isa = PBXGroup;
+			children = (
+				744EA51A1B6A7885002474E4 /* _PicMark.h */,
+				744EA51B1B6A7885002474E4 /* _PicMark.m */,
+			);
+			name = "Generated - DO NOT EDIT";
+			sourceTree = "<group>";
+		};
+		744EA5241B6A78EF002474E4 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				744EA5211B6A78E3002474E4 /* CoreDataStack.h */,
+				744EA5221B6A78E3002474E4 /* CoreDataStack.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		744EA4C81B690B68002474E4 /* Pickit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744EA4EC1B690B68002474E4 /* Build configuration list for PBXNativeTarget "Pickit" */;
+			buildPhases = (
+				744EA4C51B690B68002474E4 /* Sources */,
+				744EA4C61B690B68002474E4 /* Frameworks */,
+				744EA4C71B690B68002474E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pickit;
+			productName = Pickit;
+			productReference = 744EA4C91B690B68002474E4 /* Pickit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		744EA4C11B690B67002474E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
+				TargetAttributes = {
+					744EA4C81B690B68002474E4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					744EA5101B6A773E002474E4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 744EA4C41B690B67002474E4 /* Build configuration list for PBXProject "Pickit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 744EA4C01B690B67002474E4;
+			productRefGroup = 744EA4CA1B690B68002474E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				744EA4C81B690B68002474E4 /* Pickit */,
+				744EA5101B6A773E002474E4 /* Mogenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		744EA4C71B690B68002474E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744EA4DD1B690B68002474E4 /* LaunchScreen.xib in Resources */,
+				744EA4DA1B690B68002474E4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		744EA5141B6A774F002474E4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=${PATH}:/usr/local/bin\ncd \"${PROJECT_DIR}/Pickit\"\nmogenerator --human-dir Classes --machine-dir MOGenerated --model PickitModel.xcdatamodeld/PickitModel.xcdatamodel --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		744EA4C51B690B68002474E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744EA51F1B6A7885002474E4 /* PicMark.m in Sources */,
+				744EA4F41B690CC5002474E4 /* PinsViewController.m in Sources */,
+				744EA50F1B6A7629002474E4 /* PickitModel.xcdatamodeld in Sources */,
+				744EA5231B6A78E3002474E4 /* CoreDataStack.m in Sources */,
+				744EA4D21B690B68002474E4 /* AppDelegate.m in Sources */,
+				744EA4CF1B690B68002474E4 /* main.m in Sources */,
+				744EA51E1B6A7885002474E4 /* _PicMark.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		744EA4DB1B690B68002474E4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				744EA4DC1B690B68002474E4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		744EA4EA1B690B68002474E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		744EA4EB1B690B68002474E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		744EA4ED1B690B68002474E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pickit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		744EA4EE1B690B68002474E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pickit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		744EA5121B6A773E002474E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		744EA5131B6A773E002474E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		744EA4C41B690B67002474E4 /* Build configuration list for PBXProject "Pickit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744EA4EA1B690B68002474E4 /* Debug */,
+				744EA4EB1B690B68002474E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744EA4EC1B690B68002474E4 /* Build configuration list for PBXNativeTarget "Pickit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744EA4ED1B690B68002474E4 /* Debug */,
+				744EA4EE1B690B68002474E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744EA5111B6A773E002474E4 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744EA5121B6A773E002474E4 /* Debug */,
+				744EA5131B6A773E002474E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		744EA50D1B6A7629002474E4 /* PickitModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				744EA50E1B6A7629002474E4 /* PickitModel.xcdatamodel */,
+			);
+			currentVersion = 744EA50E1B6A7629002474E4 /* PickitModel.xcdatamodel */;
+			path = PickitModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 744EA4C11B690B67002474E4 /* Project object */;
+}

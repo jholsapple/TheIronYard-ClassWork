@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="n3p-3a-KMW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Students Table View Controller-->
+        <scene sceneID="NDC-Tm-okh">
+            <objects>
+                <tableViewController id="b0i-X8-Sr2" customClass="StudentsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vBu-jz-Vbm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentCell" id="oO4-5c-YSm" customClass="StudentCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oO4-5c-YSm" id="vxB-af-qCU">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7bo-fz-qIn">
+                                            <rect key="frame" x="15" y="7" width="281" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="b0i-X8-Sr2" id="YG9-bD-we3"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kGR-6k-Zee">
+                                            <rect key="frame" x="304" y="7" width="281" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="b0i-X8-Sr2" id="JyI-2D-AqI"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="kGR-6k-Zee" firstAttribute="centerY" secondItem="7bo-fz-qIn" secondAttribute="centerY" id="EOW-BN-Opn"/>
+                                        <constraint firstItem="kGR-6k-Zee" firstAttribute="width" secondItem="7bo-fz-qIn" secondAttribute="width" id="GFI-TI-xzM"/>
+                                        <constraint firstAttribute="trailing" secondItem="kGR-6k-Zee" secondAttribute="trailing" constant="15" id="ZMn-Hx-cph"/>
+                                        <constraint firstItem="7bo-fz-qIn" firstAttribute="leading" secondItem="vxB-af-qCU" secondAttribute="leading" constant="15" id="c3q-J5-yyf"/>
+                                        <constraint firstItem="7bo-fz-qIn" firstAttribute="top" secondItem="vxB-af-qCU" secondAttribute="top" constant="7" id="eGW-ik-cPJ"/>
+                                        <constraint firstAttribute="centerY" secondItem="7bo-fz-qIn" secondAttribute="centerY" constant="-0.25" id="mvk-fo-YPc"/>
+                                        <constraint firstItem="kGR-6k-Zee" firstAttribute="leading" secondItem="7bo-fz-qIn" secondAttribute="trailing" constant="8" id="tIq-nw-t39"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ageTextField" destination="kGR-6k-Zee" id="RmX-kS-NZE"/>
+                                    <outlet property="nameTextField" destination="7bo-fz-qIn" id="7mZ-yB-7GM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="b0i-X8-Sr2" id="Lqt-O9-hEF"/>
+                            <outlet property="delegate" destination="b0i-X8-Sr2" id="5zs-Vh-V5M"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Tr7-Rq-Uvs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="H1k-y4-onC">
+                            <connections>
+                                <action selector="addStudent:" destination="b0i-X8-Sr2" id="wKH-0F-2rs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8CX-Mc-uW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931" y="399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QlP-Jy-Vv6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n3p-3a-KMW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9e1-AD-ESg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b0i-X8-Sr2" kind="relationship" relationship="rootViewController" id="3p2-O1-IWI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aje-wp-QgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="399"/>
+        </scene>
+    </scenes>
+</document>

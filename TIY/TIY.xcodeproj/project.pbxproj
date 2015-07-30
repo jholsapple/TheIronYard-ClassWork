@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7468A1CD1B67C08B00BA2919 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7468A1CE1B67C08B00BA2919 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				7468A1D11B67C0AA00BA2919 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		7468A1A01B67B6E300BA2919 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468A19F1B67B6E300BA2919 /* main.m */; };
+		7468A1A31B67B6E300BA2919 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468A1A21B67B6E300BA2919 /* AppDelegate.m */; };
+		7468A1A91B67B6E300BA2919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7468A1A71B67B6E300BA2919 /* Main.storyboard */; };
+		7468A1AB1B67B6E300BA2919 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7468A1AA1B67B6E300BA2919 /* Images.xcassets */; };
+		7468A1AE1B67B6E300BA2919 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7468A1AC1B67B6E300BA2919 /* LaunchScreen.xib */; };
+		7468A1BA1B67B6E300BA2919 /* TIYTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468A1B91B67B6E300BA2919 /* TIYTests.m */; };
+		7468A1C51B67B76F00BA2919 /* StudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468A1C41B67B76F00BA2919 /* StudentsTableViewController.m */; };
+		7468A1C91B67BACD00BA2919 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468A1C81B67BACD00BA2919 /* CoreDataStack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7468A1CC1B67BB7F00BA2919 /* TIYModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7468A1CA1B67BB7F00BA2919 /* TIYModel.xcdatamodeld */; };
+		7468A1D91B67C6F500BA2919 /* StudentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468A1D81B67C6F500BA2919 /* StudentCell.m */; };
+		7468A1DE1B67CA7600BA2919 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468A1DB1B67CA7600BA2919 /* Student.m */; };
+		7468A1DF1B67CA7600BA2919 /* _Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468A1DD1B67CA7600BA2919 /* _Student.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7468A1B41B67B6E300BA2919 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7468A1921B67B6E300BA2919 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7468A1991B67B6E300BA2919;
+			remoteInfo = TIY;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7468A19A1B67B6E300BA2919 /* TIY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7468A19E1B67B6E300BA2919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7468A19F1B67B6E300BA2919 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7468A1A11B67B6E300BA2919 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7468A1A21B67B6E300BA2919 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7468A1A81B67B6E300BA2919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7468A1AA1B67B6E300BA2919 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7468A1AD1B67B6E300BA2919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7468A1B31B67B6E300BA2919 /* TIYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TIYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7468A1B81B67B6E300BA2919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7468A1B91B67B6E300BA2919 /* TIYTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TIYTests.m; sourceTree = "<group>"; };
+		7468A1C31B67B76F00BA2919 /* StudentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsTableViewController.h; sourceTree = "<group>"; };
+		7468A1C41B67B76F00BA2919 /* StudentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsTableViewController.m; sourceTree = "<group>"; };
+		7468A1C71B67BACD00BA2919 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		7468A1C81B67BACD00BA2919 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		7468A1CB1B67BB7F00BA2919 /* TIYModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TIYModel.xcdatamodel; sourceTree = "<group>"; };
+		7468A1D71B67C6F500BA2919 /* StudentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentCell.h; sourceTree = "<group>"; };
+		7468A1D81B67C6F500BA2919 /* StudentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentCell.m; sourceTree = "<group>"; };
+		7468A1DA1B67CA7600BA2919 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Student.h; path = Classes/Student.h; sourceTree = "<group>"; };
+		7468A1DB1B67CA7600BA2919 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Student.m; path = Classes/Student.m; sourceTree = "<group>"; };
+		7468A1DC1B67CA7600BA2919 /* _Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Student.h; path = MOGenerated/_Student.h; sourceTree = "<group>"; };
+		7468A1DD1B67CA7600BA2919 /* _Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Student.m; path = MOGenerated/_Student.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7468A1971B67B6E300BA2919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7468A1B01B67B6E300BA2919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7468A1911B67B6E300BA2919 = {
+			isa = PBXGroup;
+			children = (
+				7468A19C1B67B6E300BA2919 /* TIY */,
+				7468A1B61B67B6E300BA2919 /* TIYTests */,
+				7468A19B1B67B6E300BA2919 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7468A19B1B67B6E300BA2919 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7468A19A1B67B6E300BA2919 /* TIY.app */,
+				7468A1B31B67B6E300BA2919 /* TIYTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7468A19C1B67B6E300BA2919 /* TIY */ = {
+			isa = PBXGroup;
+			children = (
+				7468A1D61B67C4EE00BA2919 /* Core Data Model Classes */,
+				7468A1C61B67BA8E00BA2919 /* Libraries */,
+				7468A1A11B67B6E300BA2919 /* AppDelegate.h */,
+				7468A1A21B67B6E300BA2919 /* AppDelegate.m */,
+				7468A1C31B67B76F00BA2919 /* StudentsTableViewController.h */,
+				7468A1C41B67B76F00BA2919 /* StudentsTableViewController.m */,
+				7468A1D71B67C6F500BA2919 /* StudentCell.h */,
+				7468A1D81B67C6F500BA2919 /* StudentCell.m */,
+				7468A1A71B67B6E300BA2919 /* Main.storyboard */,
+				7468A1CA1B67BB7F00BA2919 /* TIYModel.xcdatamodeld */,
+				7468A1AA1B67B6E300BA2919 /* Images.xcassets */,
+				7468A1AC1B67B6E300BA2919 /* LaunchScreen.xib */,
+				7468A19D1B67B6E300BA2919 /* Supporting Files */,
+			);
+			path = TIY;
+			sourceTree = "<group>";
+		};
+		7468A19D1B67B6E300BA2919 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7468A19E1B67B6E300BA2919 /* Info.plist */,
+				7468A19F1B67B6E300BA2919 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7468A1B61B67B6E300BA2919 /* TIYTests */ = {
+			isa = PBXGroup;
+			children = (
+				7468A1B91B67B6E300BA2919 /* TIYTests.m */,
+				7468A1B71B67B6E300BA2919 /* Supporting Files */,
+			);
+			path = TIYTests;
+			sourceTree = "<group>";
+		};
+		7468A1B71B67B6E300BA2919 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7468A1B81B67B6E300BA2919 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7468A1C61B67BA8E00BA2919 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7468A1C71B67BACD00BA2919 /* CoreDataStack.h */,
+				7468A1C81B67BACD00BA2919 /* CoreDataStack.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		7468A1D61B67C4EE00BA2919 /* Core Data Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7468A1DA1B67CA7600BA2919 /* Student.h */,
+				7468A1DB1B67CA7600BA2919 /* Student.m */,
+				7468A1E01B67CA9600BA2919 /* Generated - DO NOT EDIT */,
+			);
+			name = "Core Data Model Classes";
+			sourceTree = "<group>";
+		};
+		7468A1E01B67CA9600BA2919 /* Generated - DO NOT EDIT */ = {
+			isa = PBXGroup;
+			children = (
+				7468A1DC1B67CA7600BA2919 /* _Student.h */,
+				7468A1DD1B67CA7600BA2919 /* _Student.m */,
+			);
+			name = "Generated - DO NOT EDIT";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7468A1991B67B6E300BA2919 /* TIY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7468A1BD1B67B6E300BA2919 /* Build configuration list for PBXNativeTarget "TIY" */;
+			buildPhases = (
+				7468A1961B67B6E300BA2919 /* Sources */,
+				7468A1971B67B6E300BA2919 /* Frameworks */,
+				7468A1981B67B6E300BA2919 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TIY;
+			productName = TIY;
+			productReference = 7468A19A1B67B6E300BA2919 /* TIY.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7468A1B21B67B6E300BA2919 /* TIYTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7468A1C01B67B6E300BA2919 /* Build configuration list for PBXNativeTarget "TIYTests" */;
+			buildPhases = (
+				7468A1AF1B67B6E300BA2919 /* Sources */,
+				7468A1B01B67B6E300BA2919 /* Frameworks */,
+				7468A1B11B67B6E300BA2919 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7468A1B51B67B6E300BA2919 /* PBXTargetDependency */,
+			);
+			name = TIYTests;
+			productName = TIYTests;
+			productReference = 7468A1B31B67B6E300BA2919 /* TIYTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7468A1921B67B6E300BA2919 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
+				TargetAttributes = {
+					7468A1991B67B6E300BA2919 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					7468A1B21B67B6E300BA2919 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 7468A1991B67B6E300BA2919;
+					};
+					7468A1CD1B67C08B00BA2919 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 7468A1951B67B6E300BA2919 /* Build configuration list for PBXProject "TIY" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7468A1911B67B6E300BA2919;
+			productRefGroup = 7468A19B1B67B6E300BA2919 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7468A1991B67B6E300BA2919 /* TIY */,
+				7468A1B21B67B6E300BA2919 /* TIYTests */,
+				7468A1CD1B67C08B00BA2919 /* Mogenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7468A1981B67B6E300BA2919 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7468A1A91B67B6E300BA2919 /* Main.storyboard in Resources */,
+				7468A1AE1B67B6E300BA2919 /* LaunchScreen.xib in Resources */,
+				7468A1AB1B67B6E300BA2919 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7468A1B11B67B6E300BA2919 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7468A1D11B67C0AA00BA2919 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=${PATH}:/usr/local/bin\ncd \"${PROJECT_DIR}/TIY\"\nmogenerator --human-dir Classes --machine-dir MOGenerated --model TIYModel.xcdatamodeld/TIYModel.xcdatamodel --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7468A1961B67B6E300BA2919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7468A1C51B67B76F00BA2919 /* StudentsTableViewController.m in Sources */,
+				7468A1D91B67C6F500BA2919 /* StudentCell.m in Sources */,
+				7468A1CC1B67BB7F00BA2919 /* TIYModel.xcdatamodeld in Sources */,
+				7468A1DF1B67CA7600BA2919 /* _Student.m in Sources */,
+				7468A1A31B67B6E300BA2919 /* AppDelegate.m in Sources */,
+				7468A1DE1B67CA7600BA2919 /* Student.m in Sources */,
+				7468A1A01B67B6E300BA2919 /* main.m in Sources */,
+				7468A1C91B67BACD00BA2919 /* CoreDataStack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7468A1AF1B67B6E300BA2919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7468A1BA1B67B6E300BA2919 /* TIYTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7468A1B51B67B6E300BA2919 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7468A1991B67B6E300BA2919 /* TIY */;
+			targetProxy = 7468A1B41B67B6E300BA2919 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7468A1A71B67B6E300BA2919 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7468A1A81B67B6E300BA2919 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7468A1AC1B67B6E300BA2919 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7468A1AD1B67B6E300BA2919 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7468A1BB1B67B6E300BA2919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7468A1BC1B67B6E300BA2919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7468A1BE1B67B6E300BA2919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TIY/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7468A1BF1B67B6E300BA2919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TIY/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7468A1C11B67B6E300BA2919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TIYTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TIY.app/TIY";
+			};
+			name = Debug;
+		};
+		7468A1C21B67B6E300BA2919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TIYTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TIY.app/TIY";
+			};
+			name = Release;
+		};
+		7468A1CF1B67C08B00BA2919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7468A1D01B67C08B00BA2919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7468A1951B67B6E300BA2919 /* Build configuration list for PBXProject "TIY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7468A1BB1B67B6E300BA2919 /* Debug */,
+				7468A1BC1B67B6E300BA2919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7468A1BD1B67B6E300BA2919 /* Build configuration list for PBXNativeTarget "TIY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7468A1BE1B67B6E300BA2919 /* Debug */,
+				7468A1BF1B67B6E300BA2919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7468A1C01B67B6E300BA2919 /* Build configuration list for PBXNativeTarget "TIYTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7468A1C11B67B6E300BA2919 /* Debug */,
+				7468A1C21B67B6E300BA2919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7468A1CE1B67C08B00BA2919 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7468A1CF1B67C08B00BA2919 /* Debug */,
+				7468A1D01B67C08B00BA2919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7468A1CA1B67BB7F00BA2919 /* TIYModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7468A1CB1B67BB7F00BA2919 /* TIYModel.xcdatamodel */,
+			);
+			currentVersion = 7468A1CB1B67BB7F00BA2919 /* TIYModel.xcdatamodel */;
+			path = TIYModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7468A1921B67B6E300BA2919 /* Project object */;
+}
