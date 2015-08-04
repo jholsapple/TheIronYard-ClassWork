@@ -64,7 +64,7 @@
     pinAnnotationView.canShowCallout = YES;
     PicMark *aPicMark = (PicMark *)annotation;
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 32.0, 32.0)];
-    [imageView setImage: [aPicMark image]];
+    [imageView setImage: [aPicMark image];
     pinAnnotationView.leftCalloutAccessoryView = imageView;
     
     return pinAnnotationView;
