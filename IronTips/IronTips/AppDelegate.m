@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -15,8 +16,41 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [Parse setApplicationId:@"7m0HnyrxZKtpTVUqUNS0wLhYby1WmkZ0h9HdbX9j"
+                  clientKey:@"x9zlQZ4Dmjmyuk9l2LZF2LoKcTSYMOdgAZ9SNLBR"];
+//    PFObject *player = [PFObject objectWithClassName:@"Player"];
+//    player[@"Name"] = @"John";
+//    player[@"Score"] = @7;
+//    [player save];
+    
+//    player[@"Name"] = @"Amanda Hugankiss";
+//    player[@"Score"] = @1;
+//    [player saveInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
+//        if (succeeded)
+//        {
+//            NSLog(@"Player was added to Parse");
+//        }
+//        else
+//        {
+//            NSLog(@"Player save failed: %@", [error localizedDescription]);
+//        }
+//    }];
+    
+//    PFQuery *query = [PFQuery queryWithClassName:@"Player"];
+//    [query whereKey:@"Score" greaterThan:@500];
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//        if (!error)
+//        {
+//            NSLog(@"Successfully retrieved: %@", objects);
+//        }
+//        else
+//        {
+//            NSLog(@"Error: %@", [error localizedDescription]);
+//        }
+//    }];
+    
     return YES;
 }
 

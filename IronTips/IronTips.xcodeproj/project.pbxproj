@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		74798E961B7396570067E94D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74798E951B7396570067E94D /* main.m */; };
 		74798E991B7396570067E94D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74798E981B7396570067E94D /* AppDelegate.m */; };
-		74798E9C1B7396570067E94D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74798E9B1B7396570067E94D /* ViewController.m */; };
 		74798E9F1B7396570067E94D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74798E9D1B7396570067E94D /* Main.storyboard */; };
 		74798EA11B7396570067E94D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74798EA01B7396570067E94D /* Images.xcassets */; };
 		74798EA41B7396570067E94D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74798EA21B7396570067E94D /* LaunchScreen.xib */; };
 		74798EB01B7396570067E94D /* IronTipsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74798EAF1B7396570067E94D /* IronTipsTests.m */; };
+		74798EBB1B73A3470067E94D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74798EBA1B73A3470067E94D /* LoginViewController.m */; };
+		74798EBE1B73A35E0067E94D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74798EBD1B73A35E0067E94D /* RegisterViewController.m */; };
+		74798EC11B73BA6A0067E94D /* TipsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74798EC01B73BA6A0067E94D /* TipsTableViewController.m */; };
+		D6F89A3841B8D033EC983A14 /* libPods-IronTips.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9153E77E8F07571115AB1A /* libPods-IronTips.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +30,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D9153E77E8F07571115AB1A /* libPods-IronTips.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IronTips.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74798E901B7396570067E94D /* IronTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IronTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74798E941B7396570067E94D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74798E951B7396570067E94D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74798E971B7396570067E94D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74798E981B7396570067E94D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		74798E9A1B7396570067E94D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		74798E9B1B7396570067E94D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		74798E9E1B7396570067E94D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74798EA01B7396570067E94D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		74798EA31B7396570067E94D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		74798EA91B7396570067E94D /* IronTipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IronTipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74798EAE1B7396570067E94D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74798EAF1B7396570067E94D /* IronTipsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IronTipsTests.m; sourceTree = "<group>"; };
+		74798EB91B73A3470067E94D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		74798EBA1B73A3470067E94D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		74798EBC1B73A35E0067E94D /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		74798EBD1B73A35E0067E94D /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		74798EBF1B73BA6A0067E94D /* TipsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsTableViewController.h; sourceTree = "<group>"; };
+		74798EC01B73BA6A0067E94D /* TipsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsTableViewController.m; sourceTree = "<group>"; };
+		7CBAFB129420B4E171C4B7EF /* Pods-IronTips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronTips.release.xcconfig"; path = "Pods/Target Support Files/Pods-IronTips/Pods-IronTips.release.xcconfig"; sourceTree = "<group>"; };
+		AB100F168BD47F94077E8C36 /* Pods-IronTips.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronTips.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IronTips/Pods-IronTips.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F89A3841B8D033EC983A14 /* libPods-IronTips.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +71,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3528FCCF9C811BB9D4CD0E4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB100F168BD47F94077E8C36 /* Pods-IronTips.debug.xcconfig */,
+				7CBAFB129420B4E171C4B7EF /* Pods-IronTips.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		74798E871B7396570067E94D = {
 			isa = PBXGroup;
 			children = (
 				74798E921B7396570067E94D /* IronTips */,
 				74798EAC1B7396570067E94D /* IronTipsTests */,
 				74798E911B7396570067E94D /* Products */,
+				3528FCCF9C811BB9D4CD0E4F /* Pods */,
+				882058E81A91D478F46D0F1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,8 +105,12 @@
 			children = (
 				74798E971B7396570067E94D /* AppDelegate.h */,
 				74798E981B7396570067E94D /* AppDelegate.m */,
-				74798E9A1B7396570067E94D /* ViewController.h */,
-				74798E9B1B7396570067E94D /* ViewController.m */,
+				74798EBF1B73BA6A0067E94D /* TipsTableViewController.h */,
+				74798EC01B73BA6A0067E94D /* TipsTableViewController.m */,
+				74798EB91B73A3470067E94D /* LoginViewController.h */,
+				74798EBA1B73A3470067E94D /* LoginViewController.m */,
+				74798EBC1B73A35E0067E94D /* RegisterViewController.h */,
+				74798EBD1B73A35E0067E94D /* RegisterViewController.m */,
 				74798E9D1B7396570067E94D /* Main.storyboard */,
 				74798EA01B7396570067E94D /* Images.xcassets */,
 				74798EA21B7396570067E94D /* LaunchScreen.xib */,
@@ -119,6 +145,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		882058E81A91D478F46D0F1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D9153E77E8F07571115AB1A /* libPods-IronTips.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74798EB31B7396570067E94D /* Build configuration list for PBXNativeTarget "IronTips" */;
 			buildPhases = (
+				1C04A3809A09171B52B860D0 /* Check Pods Manifest.lock */,
 				74798E8C1B7396570067E94D /* Sources */,
 				74798E8D1B7396570067E94D /* Frameworks */,
 				74798E8E1B7396570067E94D /* Resources */,
+				249AD0DC783A6E4A6711E4AF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +250,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C04A3809A09171B52B860D0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		249AD0DC783A6E4A6711E4AF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IronTips/Pods-IronTips-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74798E8C1B7396570067E94D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74798E9C1B7396570067E94D /* ViewController.m in Sources */,
 				74798E991B7396570067E94D /* AppDelegate.m in Sources */,
 				74798E961B7396570067E94D /* main.m in Sources */,
+				74798EBB1B73A3470067E94D /* LoginViewController.m in Sources */,
+				74798EC11B73BA6A0067E94D /* TipsTableViewController.m in Sources */,
+				74798EBE1B73A35E0067E94D /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +416,7 @@
 		};
 		74798EB41B7396570067E94D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB100F168BD47F94077E8C36 /* Pods-IronTips.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IronTips/Info.plist;
@@ -355,6 +427,7 @@
 		};
 		74798EB51B7396570067E94D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CBAFB129420B4E171C4B7EF /* Pods-IronTips.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IronTips/Info.plist;
@@ -416,6 +489,7 @@
 				74798EB51B7396570067E94D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74798EB61B7396570067E94D /* Build configuration list for PBXNativeTarget "IronTipsTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +498,7 @@
 				74798EB81B7396570067E94D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
