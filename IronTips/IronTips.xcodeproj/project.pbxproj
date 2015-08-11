@@ -16,6 +16,8 @@
 		74798EBB1B73A3470067E94D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74798EBA1B73A3470067E94D /* LoginViewController.m */; };
 		74798EBE1B73A35E0067E94D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74798EBD1B73A35E0067E94D /* RegisterViewController.m */; };
 		74798EC11B73BA6A0067E94D /* TipsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74798EC01B73BA6A0067E94D /* TipsTableViewController.m */; };
+		74C2C7571B7A3445007522EC /* TipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C2C7561B7A3445007522EC /* TipCell.m */; };
+		74C2C75A1B7A446E007522EC /* AddTipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C2C7591B7A446E007522EC /* AddTipViewController.m */; };
 		D6F89A3841B8D033EC983A14 /* libPods-IronTips.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9153E77E8F07571115AB1A /* libPods-IronTips.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,10 @@
 		74798EBD1B73A35E0067E94D /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		74798EBF1B73BA6A0067E94D /* TipsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsTableViewController.h; sourceTree = "<group>"; };
 		74798EC01B73BA6A0067E94D /* TipsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsTableViewController.m; sourceTree = "<group>"; };
+		74C2C7551B7A3445007522EC /* TipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCell.h; sourceTree = "<group>"; };
+		74C2C7561B7A3445007522EC /* TipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCell.m; sourceTree = "<group>"; };
+		74C2C7581B7A446E007522EC /* AddTipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTipViewController.h; sourceTree = "<group>"; };
+		74C2C7591B7A446E007522EC /* AddTipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTipViewController.m; sourceTree = "<group>"; };
 		7CBAFB129420B4E171C4B7EF /* Pods-IronTips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronTips.release.xcconfig"; path = "Pods/Target Support Files/Pods-IronTips/Pods-IronTips.release.xcconfig"; sourceTree = "<group>"; };
 		AB100F168BD47F94077E8C36 /* Pods-IronTips.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronTips.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IronTips/Pods-IronTips.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +113,10 @@
 				74798E981B7396570067E94D /* AppDelegate.m */,
 				74798EBF1B73BA6A0067E94D /* TipsTableViewController.h */,
 				74798EC01B73BA6A0067E94D /* TipsTableViewController.m */,
+				74C2C7551B7A3445007522EC /* TipCell.h */,
+				74C2C7561B7A3445007522EC /* TipCell.m */,
+				74C2C7581B7A446E007522EC /* AddTipViewController.h */,
+				74C2C7591B7A446E007522EC /* AddTipViewController.m */,
 				74798EB91B73A3470067E94D /* LoginViewController.h */,
 				74798EBA1B73A3470067E94D /* LoginViewController.m */,
 				74798EBC1B73A35E0067E94D /* RegisterViewController.h */,
@@ -291,6 +301,8 @@
 				74798E991B7396570067E94D /* AppDelegate.m in Sources */,
 				74798E961B7396570067E94D /* main.m in Sources */,
 				74798EBB1B73A3470067E94D /* LoginViewController.m in Sources */,
+				74C2C75A1B7A446E007522EC /* AddTipViewController.m in Sources */,
+				74C2C7571B7A3445007522EC /* TipCell.m in Sources */,
 				74798EC11B73BA6A0067E94D /* TipsTableViewController.m in Sources */,
 				74798EBE1B73A35E0067E94D /* RegisterViewController.m in Sources */,
 			);

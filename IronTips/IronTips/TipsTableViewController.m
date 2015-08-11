@@ -7,9 +7,13 @@
 //
 
 #import "TipsTableViewController.h"
+#import "TipCell.h"
 #import <Parse/Parse.h>
 
 @interface TipsTableViewController ()
+{
+    NSArray *tips;
+}
 
 @end
 
@@ -18,12 +22,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshTapped:)];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self refreshTipsFromParse];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -46,24 +51,37 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return [tips count];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    TipCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TipCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    PFObject *aTip = tips[indexPath.row];
+    cell.commentLabel.text = aTip[@"comment"];
+    
+    PFRelation *userCreated = aTip[@"createdBy"];
+    [userCreated.query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error)
+        {
+            id anObject = objects[0];
+            if ([anObject isKindOfClass:[PFUser class]])
+            {
+                PFUser *user = anObject;
+                cell.userLabel.text = [NSString stringWithFormat:@"%@ says...", user.username];
+            }
+        }
+    }];
     
     return cell;
 }
- */
 
 /*
 // Override to support conditional editing of the table view.
@@ -108,5 +126,31 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Action Handlers
+
+- (void)refreshTapped:(UIBarButtonItem *)sender
+{
+    [self refreshTipsFromParse];
+}
+
+#pragma mark - Private
+
+- (void)refreshTipsFromParse
+{
+    if ([PFUser currentUser])
+    {
+        PFQuery *query = [[PFQuery alloc] initWithClassName:@"Tip"];
+        [query orderByDescending:@"createdAt"];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
+                          {
+                              if (!error)
+                              {
+                                  tips = objects;
+                                  [self.tableView reloadData];
+                              }
+                          }];
+    }
+}
 
 @end
