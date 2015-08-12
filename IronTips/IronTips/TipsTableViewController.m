@@ -142,8 +142,7 @@
     {
         PFQuery *query = [[PFQuery alloc] initWithClassName:@"Tip"];
         [query orderByDescending:@"createdAt"];
-        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
-                          {
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
                               if (!error)
                               {
                                   tips = objects;

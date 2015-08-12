@@ -52,11 +52,9 @@
 
 #pragma mark - Action Handlers
 
-
 - (IBAction)doneTapped:(UIBarButtonItem *)sender
 {
     [self addTipToParse];
-    
 }
 
 - (IBAction)cancelTapped:(UIBarButtonItem *)sender
