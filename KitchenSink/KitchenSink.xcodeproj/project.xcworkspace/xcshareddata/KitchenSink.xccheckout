@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E1FD3D00-15E9-45A1-8136-D5DE0C36362D</string>
+	<string>F1F5E191-D63D-4CF4-9FC4-C9C02E8A2667</string>
 	<key>IDESourceControlProjectName</key>
-	<string>IronTunes</string>
+	<string>KitchenSink</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9B39151F6DCBB964125F310F72207C9B10228819</key>
 		<string>https://github.com/jholsapple/TIY-ClassWork.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>IronTunes/IronTunes.xcodeproj</string>
+	<string>KitchenSink/KitchenSink.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9B39151F6DCBB964125F310F72207C9B10228819</key>

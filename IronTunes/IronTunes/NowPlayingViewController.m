@@ -18,9 +18,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *songTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *artistLabel;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *playBarButton;
 
 - (IBAction)playTapped:(UIButton *)sender;
 - (IBAction)restartTapped:(UIButton *)sender;
+
+- (IBAction)playBarButton:(UIBarButtonItem *)sender;
+- (IBAction)forwardSkipBarButton:(UIBarButtonItem *)sender;
+- (IBAction)reverseSkipBarButton:(UIBarButtonItem *)sender;
 
 @end
 
@@ -87,6 +92,15 @@
     {
         [self togglePlayback:YES];
     }
+}
+
+- (IBAction)playBarButton:(UIBarButtonItem *)sender {
+}
+
+- (IBAction)forwardSkipBarButton:(UIBarButtonItem *)sender {
+}
+
+- (IBAction)reverseSkipBarButton:(UIBarButtonItem *)sender {
 }
 
 #pragma mark - Remote Control events
