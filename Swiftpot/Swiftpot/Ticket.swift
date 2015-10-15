@@ -38,7 +38,7 @@ class Ticket
     func createPick()
     {
         var pickFound = false
-        do
+        repeat
         {
             let aPick = Int(arc4random() % 53 + 1)
             if !picks.contains(aPick)
@@ -52,7 +52,7 @@ class Ticket
     func description() -> String
     {
         var numbers = ""
-        for pick in sorted(picks)
+        for pick in picks.sort()
         {
             numbers = numbers + " \(pick)"
         }

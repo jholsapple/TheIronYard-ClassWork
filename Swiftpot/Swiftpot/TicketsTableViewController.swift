@@ -44,7 +44,6 @@ class TicketsTableViewController: UITableViewController, WinningTicketViewContro
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        
         return tickets.count
     }
 

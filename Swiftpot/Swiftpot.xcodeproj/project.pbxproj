@@ -165,6 +165,8 @@
 		74BEBE601B6123CF0024A30E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
 				TargetAttributes = {
@@ -421,6 +423,7 @@
 				74BEBE891B6123CF0024A30E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74BEBE8A1B6123CF0024A30E /* Build configuration list for PBXNativeTarget "SwiftpotTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +432,7 @@
 				74BEBE8C1B6123CF0024A30E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -58,7 +58,7 @@ class WinningTicketViewController: UIViewController, UIPickerViewDataSource, UIP
         return 40.0
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String!
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
     {
         return "\(row+1)"
     }
@@ -66,7 +66,7 @@ class WinningTicketViewController: UIViewController, UIPickerViewDataSource, UIP
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
         winningPicks[component] = row+1
-        println("\(winningPicks)")
+        print("\(winningPicks)")
     }
     
 
@@ -84,7 +84,7 @@ class WinningTicketViewController: UIViewController, UIPickerViewDataSource, UIP
     
     @IBAction func checkTicketsButton(sender: UIButton)
     {
-        let winningTicket = Ticket(picksArray: winningPicks)
+        = Ticket(picksArray: winningPicks)
         
     }
     
