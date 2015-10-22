@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74E195F31BD81BAA0048B6F8 /* dubstep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74E195EE1BD81BAA0048B6F8 /* dubstep.mp3 */; settings = {ASSET_TAGS = (); }; };
+		74E195F41BD81BAA0048B6F8 /* happiness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74E195EF1BD81BAA0048B6F8 /* happiness.mp3 */; settings = {ASSET_TAGS = (); }; };
+		74E195F51BD81BAA0048B6F8 /* groovyhiphop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74E195F01BD81BAA0048B6F8 /* groovyhiphop.mp3 */; settings = {ASSET_TAGS = (); }; };
+		74E195F61BD81BAA0048B6F8 /* funkysuspense.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74E195F11BD81BAA0048B6F8 /* funkysuspense.mp3 */; settings = {ASSET_TAGS = (); }; };
+		74E195F71BD81BAA0048B6F8 /* actionable.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74E195F21BD81BAA0048B6F8 /* actionable.mp3 */; settings = {ASSET_TAGS = (); }; };
 		74EFF0F21B7B7C370016B847 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EFF0F11B7B7C370016B847 /* main.m */; };
 		74EFF0F51B7B7C370016B847 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EFF0F41B7B7C370016B847 /* AppDelegate.m */; };
 		74EFF0FB1B7B7C370016B847 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74EFF0F91B7B7C370016B847 /* Main.storyboard */; };
@@ -28,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74E195EE1BD81BAA0048B6F8 /* dubstep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dubstep.mp3; sourceTree = "<group>"; };
+		74E195EF1BD81BAA0048B6F8 /* happiness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = happiness.mp3; sourceTree = "<group>"; };
+		74E195F01BD81BAA0048B6F8 /* groovyhiphop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = groovyhiphop.mp3; sourceTree = "<group>"; };
+		74E195F11BD81BAA0048B6F8 /* funkysuspense.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = funkysuspense.mp3; sourceTree = "<group>"; };
+		74E195F21BD81BAA0048B6F8 /* actionable.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = actionable.mp3; sourceTree = "<group>"; };
 		74EFF0EC1B7B7C370016B847 /* IronTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IronTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EFF0F01B7B7C370016B847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74EFF0F11B7B7C370016B847 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -62,6 +72,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74E195F81BD81BBA0048B6F8 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				74EFF1181B7B88110016B847 /* CannedHeat.mp3 */,
+				74E195EE1BD81BAA0048B6F8 /* dubstep.mp3 */,
+				74E195EF1BD81BAA0048B6F8 /* happiness.mp3 */,
+				74E195F01BD81BAA0048B6F8 /* groovyhiphop.mp3 */,
+				74E195F11BD81BAA0048B6F8 /* funkysuspense.mp3 */,
+				74E195F21BD81BAA0048B6F8 /* actionable.mp3 */,
+			);
+			name = Songs;
+			sourceTree = "<group>";
+		};
 		74EFF0E31B7B7C370016B847 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +113,7 @@
 				74EFF0F91B7B7C370016B847 /* Main.storyboard */,
 				74EFF0FC1B7B7C370016B847 /* Images.xcassets */,
 				74EFF0FE1B7B7C370016B847 /* LaunchScreen.xib */,
+				74E195F81BD81BBA0048B6F8 /* Songs */,
 				74EFF0EF1B7B7C370016B847 /* Supporting Files */,
 			);
 			path = IronTunes;
@@ -98,7 +122,6 @@
 		74EFF0EF1B7B7C370016B847 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				74EFF1181B7B88110016B847 /* CannedHeat.mp3 */,
 				74EFF0F01B7B7C370016B847 /* Info.plist */,
 				74EFF0F11B7B7C370016B847 /* main.m */,
 			);
@@ -203,9 +226,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				74EFF0FB1B7B7C370016B847 /* Main.storyboard in Resources */,
+				74E195F31BD81BAA0048B6F8 /* dubstep.mp3 in Resources */,
+				74E195F61BD81BAA0048B6F8 /* funkysuspense.mp3 in Resources */,
 				74EFF1001B7B7C370016B847 /* LaunchScreen.xib in Resources */,
 				74EFF0FD1B7B7C370016B847 /* Images.xcassets in Resources */,
+				74E195F41BD81BAA0048B6F8 /* happiness.mp3 in Resources */,
+				74E195F71BD81BAA0048B6F8 /* actionable.mp3 in Resources */,
 				74EFF1191B7B88110016B847 /* CannedHeat.mp3 in Resources */,
+				74E195F51BD81BAA0048B6F8 /* groovyhiphop.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +448,7 @@
 				74EFF1111B7B7C370016B847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74EFF1121B7B7C370016B847 /* Build configuration list for PBXNativeTarget "IronTunesTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +457,7 @@
 				74EFF1141B7B7C370016B847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

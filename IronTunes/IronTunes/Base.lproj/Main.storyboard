@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iju-dT-ELq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B38b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iju-dT-ELq">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -18,19 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dw-Em-IfZ">
-                                <rect key="frame" x="128" y="559" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="krI-ET-sbd">
-                                <rect key="frame" x="60" y="133" width="480" height="240"/>
-                                <animations/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOW PLAYING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3r-at-Tfn">
-                                <rect key="frame" x="254" y="440" width="93.5" height="17"/>
+                                <rect key="frame" x="254" y="440" width="94" height="17"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -43,13 +32,41 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaD-uj-G0g">
-                                <rect key="frame" x="280" y="493.5" width="40.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaD-uj-G0g">
+                                <rect key="frame" x="279.5" y="493.5" width="41.5" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxk-Vs-I8Z">
+                                <rect key="frame" x="285" y="349" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="r4M-iL-WRk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whK-hH-sLU">
+                                <rect key="frame" x="366" y="349" width="90" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Skip Forward"/>
+                                <connections>
+                                    <action selector="forwardSkipButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FU6-64-2ku"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJ6-zO-gYH">
+                                <rect key="frame" x="147" y="349" width="68" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Skip Back"/>
+                                <connections>
+                                    <action selector="reverseSkipButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cwv-9h-D1R"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="krI-ET-sbd">
+                                <rect key="frame" x="60" y="72" width="480" height="240"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -61,35 +78,17 @@
                             <constraint firstAttribute="centerX" secondItem="zaD-uj-G0g" secondAttribute="centerX" id="iJA-ke-0FO"/>
                             <constraint firstAttribute="centerX" secondItem="krI-ET-sbd" secondAttribute="centerX" id="izp-6c-5Q7"/>
                             <constraint firstItem="SHN-3e-mfs" firstAttribute="centerX" secondItem="zaD-uj-G0g" secondAttribute="centerX" constant="0.5" id="jRn-pA-DiU"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="krI-ET-sbd" secondAttribute="bottom" constant="183" id="kqN-jn-ukK"/>
-                            <constraint firstItem="krI-ET-sbd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="69" id="xqj-Mg-21K"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="krI-ET-sbd" secondAttribute="bottom" constant="244" id="kqN-jn-ukK"/>
+                            <constraint firstItem="krI-ET-sbd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="xqj-Mg-21K"/>
                             <constraint firstItem="zaD-uj-G0g" firstAttribute="top" secondItem="SHN-3e-mfs" secondAttribute="bottom" constant="8.5" id="y7k-ZA-SBA"/>
                         </constraints>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem systemItem="rewind" id="Cai-ko-KkU">
-                            <connections>
-                                <action selector="reverseSkipBarButton:" destination="vXZ-lx-hvc" id="Gzg-3h-U8o"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Uau-3A-KZd"/>
-                        <barButtonItem systemItem="play" id="HOZ-ye-Uld">
-                            <connections>
-                                <action selector="playBarButton:" destination="vXZ-lx-hvc" id="o9b-dV-EV9"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="yrg-Qa-gZw"/>
-                        <barButtonItem systemItem="fastForward" id="aoX-L3-Ic2">
-                            <connections>
-                                <action selector="forwardSkipBarButton:" destination="vXZ-lx-hvc" id="iV5-eY-gCV"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="Ib0-qY-KVc"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="artistLabel" destination="zaD-uj-G0g" id="p65-eZ-ClT"/>
-                        <outlet property="playBarButton" destination="HOZ-ye-Uld" id="Il6-Fx-NJE"/>
+                        <outlet property="playButton" destination="Fxk-Vs-I8Z" id="p5C-bL-nJH"/>
                         <outlet property="songTitleLabel" destination="SHN-3e-mfs" id="qbl-hy-TIQ"/>
                     </connections>
                 </viewController>

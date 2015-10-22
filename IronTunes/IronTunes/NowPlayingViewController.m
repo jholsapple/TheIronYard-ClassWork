@@ -18,14 +18,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *songTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *artistLabel;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *playBarButton;
+
 
 - (IBAction)playTapped:(UIButton *)sender;
-- (IBAction)restartTapped:(UIButton *)sender;
 
-- (IBAction)playBarButton:(UIBarButtonItem *)sender;
-- (IBAction)forwardSkipBarButton:(UIBarButtonItem *)sender;
-- (IBAction)reverseSkipBarButton:(UIBarButtonItem *)sender;
+- (IBAction)forwardSkipButton:(UIButton *)sender;
+- (IBAction)reverseSkipButton:(UIButton *)sender;
 
 @end
 
@@ -37,7 +35,7 @@
     [self setupAudioSession];
     
     self.avQueuePlayer = [[AVQueuePlayer alloc] init];
-    AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"CannedHeat" ofType:@"mp3"]]];
+    AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Songs" ofType:@"mp3"]]];
     if (playerItem)
     {
         [self.avQueuePlayer insertItem:playerItem afterItem:nil];
@@ -94,13 +92,10 @@
     }
 }
 
-- (IBAction)playBarButton:(UIBarButtonItem *)sender {
+- (IBAction)forwardSkipButton:(UIButton *)sender {
 }
 
-- (IBAction)forwardSkipBarButton:(UIBarButtonItem *)sender {
-}
-
-- (IBAction)reverseSkipBarButton:(UIBarButtonItem *)sender {
+- (IBAction)reverseSkipButton:(UIButton *)sender {
 }
 
 #pragma mark - Remote Control events
