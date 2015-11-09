@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740939E51BF10482006EF9C2 /* groceries.json in Resources */ = {isa = PBXBuildFile; fileRef = 740939E41BF10482006EF9C2 /* groceries.json */; };
 		747BCE991B305E0D002D05BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 747BCE981B305E0D002D05BF /* main.m */; };
 		747BCE9C1B305E0D002D05BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 747BCE9B1B305E0D002D05BF /* AppDelegate.m */; };
 		747BCEA21B305E0D002D05BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747BCEA01B305E0D002D05BF /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		747BCEB31B305E0D002D05BF /* GroceryListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 747BCEB21B305E0D002D05BF /* GroceryListTests.m */; };
 		747BCEBE1B306166002D05BF /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747BCEBD1B306166002D05BF /* ListTableViewController.m */; };
 		747BCEC11B306EAF002D05BF /* GroceryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 747BCEC01B306EAF002D05BF /* GroceryItem.m */; };
-		747BCEC31B307803002D05BF /* groceries.json in Resources */ = {isa = PBXBuildFile; fileRef = 747BCEC21B307803002D05BF /* groceries.json */; };
 		747BCEC61B308152002D05BF /* GroceryItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 747BCEC51B308152002D05BF /* GroceryItemDetailViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		740939E41BF10482006EF9C2 /* groceries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = groceries.json; sourceTree = "<group>"; };
 		747BCE931B305E0D002D05BF /* GroceryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		747BCE971B305E0D002D05BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		747BCE981B305E0D002D05BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,7 +46,6 @@
 		747BCEBD1B306166002D05BF /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
 		747BCEBF1B306EAF002D05BF /* GroceryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroceryItem.h; sourceTree = "<group>"; };
 		747BCEC01B306EAF002D05BF /* GroceryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroceryItem.m; sourceTree = "<group>"; };
-		747BCEC21B307803002D05BF /* groceries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = groceries.json; path = ../../../../Desktop/groceries.json; sourceTree = "<group>"; };
 		747BCEC41B308152002D05BF /* GroceryItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroceryItemDetailViewController.h; sourceTree = "<group>"; };
 		747BCEC51B308152002D05BF /* GroceryItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroceryItemDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +89,7 @@
 		747BCE951B305E0D002D05BF /* GroceryList */ = {
 			isa = PBXGroup;
 			children = (
-				747BCEC21B307803002D05BF /* groceries.json */,
+				740939E41BF10482006EF9C2 /* groceries.json */,
 				747BCE9A1B305E0D002D05BF /* AppDelegate.h */,
 				747BCE9B1B305E0D002D05BF /* AppDelegate.m */,
 				747BCEBC1B306166002D05BF /* ListTableViewController.h */,
@@ -176,7 +176,7 @@
 		747BCE8B1B305E0D002D05BF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "John Holsapple -- The Iron Yard";
 				TargetAttributes = {
 					747BCE921B305E0D002D05BF = {
@@ -213,7 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				747BCEA21B305E0D002D05BF /* Main.storyboard in Resources */,
-				747BCEC31B307803002D05BF /* groceries.json in Resources */,
+				740939E51BF10482006EF9C2 /* groceries.json in Resources */,
 				747BCEA71B305E0D002D05BF /* LaunchScreen.xib in Resources */,
 				747BCEA41B305E0D002D05BF /* Images.xcassets in Resources */,
 			);
@@ -300,6 +300,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -365,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GroceryList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -375,6 +377,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GroceryList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -393,6 +396,7 @@
 				);
 				INFOPLIST_FILE = GroceryListTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroceryList.app/GroceryList";
 			};
@@ -408,6 +412,7 @@
 				);
 				INFOPLIST_FILE = GroceryListTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroceryList.app/GroceryList";
 			};
@@ -432,6 +437,7 @@
 				747BCEB81B305E0D002D05BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		747BCEB91B305E0D002D05BF /* Build configuration list for PBXNativeTarget "GroceryListTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +446,7 @@
 				747BCEBB1B305E0D002D05BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

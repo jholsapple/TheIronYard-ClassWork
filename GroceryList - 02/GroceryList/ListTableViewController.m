@@ -69,7 +69,6 @@
     {
         GroceryItemDetailViewController *detailVC = segue.destinationViewController;
         
-        
         UITableViewCell *selectedCell = (UITableViewCell *)sender;
         NSIndexPath *indexPath = [self.tableView indexPathForCell:selectedCell];
         GroceryItem *selectedGroceryItem = groceries[indexPath.row];
@@ -81,7 +80,6 @@
 - (void)loadGroceries
 {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"groceries" ofType:@"json"];
-    
     NSArray *groceriesJSON = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options:NSJSONReadingAllowFragments error:nil];
     
     for (NSDictionary *aDict in groceriesJSON)
