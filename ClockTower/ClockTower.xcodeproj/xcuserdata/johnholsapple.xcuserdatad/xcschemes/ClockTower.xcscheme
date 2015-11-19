@@ -14,24 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74BEBE671B6123CF0024A30E"
-               BuildableName = "Swiftpot.app"
-               BlueprintName = "Swiftpot"
-               ReferencedContainer = "container:Swiftpot.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74BEBE7C1B6123CF0024A30E"
-               BuildableName = "SwiftpotTests.xctest"
-               BlueprintName = "SwiftpotTests"
-               ReferencedContainer = "container:Swiftpot.xcodeproj">
+               BlueprintIdentifier = "748C5B0F1BFB6DB700C78B3C"
+               BuildableName = "ClockTower.app"
+               BlueprintName = "ClockTower"
+               ReferencedContainer = "container:ClockTower.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74BEBE7C1B6123CF0024A30E"
-               BuildableName = "SwiftpotTests.xctest"
-               BlueprintName = "SwiftpotTests"
-               ReferencedContainer = "container:Swiftpot.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74BEBE671B6123CF0024A30E"
-            BuildableName = "Swiftpot.app"
-            BlueprintName = "Swiftpot"
-            ReferencedContainer = "container:Swiftpot.xcodeproj">
+            BlueprintIdentifier = "748C5B0F1BFB6DB700C78B3C"
+            BuildableName = "ClockTower.app"
+            BlueprintName = "ClockTower"
+            ReferencedContainer = "container:ClockTower.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -79,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74BEBE671B6123CF0024A30E"
-            BuildableName = "Swiftpot.app"
-            BlueprintName = "Swiftpot"
-            ReferencedContainer = "container:Swiftpot.xcodeproj">
+            BlueprintIdentifier = "748C5B0F1BFB6DB700C78B3C"
+            BuildableName = "ClockTower.app"
+            BlueprintName = "ClockTower"
+            ReferencedContainer = "container:ClockTower.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -98,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74BEBE671B6123CF0024A30E"
-            BuildableName = "Swiftpot.app"
-            BlueprintName = "Swiftpot"
-            ReferencedContainer = "container:Swiftpot.xcodeproj">
+            BlueprintIdentifier = "748C5B0F1BFB6DB700C78B3C"
+            BuildableName = "ClockTower.app"
+            BlueprintName = "ClockTower"
+            ReferencedContainer = "container:ClockTower.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
