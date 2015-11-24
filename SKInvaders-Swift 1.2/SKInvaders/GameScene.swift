@@ -122,8 +122,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             prefix = "InvaderB"
         case .C:
             prefix = "InvaderC"
-        default:
-            prefix = "InvaderC"
         }
         
         return [SKTexture(imageNamed: String(format: "%@_00.png", prefix)), SKTexture(imageNamed: String(format: "%@_01.png",  prefix))]
@@ -171,7 +169,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
                 
                 for var col = 1; col <= kInvaderColCount; col++
                 {
-                    var invader = makeInvaderOfType(invaderType)
+                    let invader = makeInvaderOfType(invaderType)
                     invader.position = invaderPosition
                     addChild(invader)
                     
@@ -224,9 +222,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         addChild(healthLabel)
     }
     
-    func makeBulletOfType(bulletType: BulletType) -> SKNode!
+    func makeBulletOfType(bulletType: BulletType) -> SKNode
     {
-        var bullet: SKNode!
+        var bullet: SKNode
         
         switch bulletType
         {
@@ -248,8 +246,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             bullet.physicsBody!.categoryBitMask = kInvaderFireBulletCategory
             bullet.physicsBody!.contactTestBitMask = kShipCategory
             bullet.physicsBody!.collisionBitMask = 0x0
-        default:
-            bullet = nil
         }
         return bullet
     }
@@ -293,8 +289,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
                 case .DownThenLeft, .DownThenRight:
                     node.position = CGPoint(x: node.position.x, y: node.position.y - 10)
                 case .None:
-                    break
-                default:
                     break
                 }
                 self.timeOfLastMove = currentTime
@@ -436,41 +430,38 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         {
             if let ship = childNodeWithName(kShipName)
             {
-                if let bullet = makeBulletOfType(.ShipFired)
-                {
+                let bullet = makeBulletOfType(.ShipFired)
                     bullet.position = CGPoint(x: ship.position.x, y:ship.position.y + ship.frame.size.height - bullet.frame.size.height / 2)
                     let bulletDestination = CGPoint(x: ship.position.x, y: self.frame.size.height + bullet.frame.size.height / 2)
                     fireBullet(bullet, toDestination: bulletDestination, withDuration: 0.5, andSoundFileName: "ShipBullet.wav")
-                }
             }
         }
     }
   
   //MARK: - User Tap Helpers
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
     {
         // Intentional no-op
     }
     
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent)
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?)
     {
         // Intentional no-op
     }
     
-    override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!)
+    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?)
     {
         // Intentional no-op
     }
     
-    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent)
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?)
     {
-        if let touch = touches.first as? UITouch
+        let touch = touches.first! as UITouch
+        
+        if touch.tapCount == 1
         {
-            if touch.tapCount == 1
-            {
-                self.tapQueue.append(1)
-            }
+            self.tapQueue.append(1)
         }
     }
   
@@ -507,7 +498,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             return
         }
         
-        var nodeNames = [contact.bodyA.node!.name!, contact.bodyB.node!.name!]
+        let nodeNames = [contact.bodyA.node!.name!, contact.bodyB.node!.name!]
         if (nodeNames as NSArray).containsObject(kShipName) && (nodeNames as NSArray).containsObject(kInvaderFiredBulletName)
         {
             runAction(SKAction.playSoundFileNamed("ShipHit.wav", waitForCompletion: false))
